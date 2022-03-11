@@ -41,9 +41,18 @@ Create a `appsettings.json` file in the `HairSalon` directory and add the follow
       "DefaultConnection": "Server=localhost;Port=3306;database=riley_shimp;uid=[USERNAME];pwd=[YOUR-PASSWORD-HERE];"
   }
 }
-
 ```
 
+### Step 5
+Open MySQLWorkbench and log into your server
+(For instructions on downloading MySQLWorkbench visit https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql)
+
+In the Administration tab, select "Data Import/Restore" and then "Import from self-contained file"
+Import the file named `riley_shimp.sql` located in your `HairSalon.Solution` directory.
+In "Default Schema to be Imported to" select new, name the schema `riley_shimp` and select "Start Import".
+
+### Step 6
+In your terminal, navigate to the `HairSalon` folder and run the command `dotnet run`
 
 ## Known Bugs
 
